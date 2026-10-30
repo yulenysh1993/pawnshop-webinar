@@ -5,34 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вебинар для товароведов</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f9f6f0; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; text-align: center; }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background-color: #f9f6f0; 
+            color: #333; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            text-align: center; 
+        }
         h1 { color: #b8860b; margin-bottom: 10px; }
         p { font-size: 16px; line-height: 1.5; }
-        .btn { display: block; background: linear-gradient(135deg, #d4af37, #f3e5ab); color: #222; padding: 18px; text-align: center; text-decoration: none; border-radius: 12px; margin: 15px 0; font-weight: bold; font-size: 18px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
-        .btn:active { transform: scale(0.98); }
-        .materials { text-align: left; background: white; padding: 20px; border-radius: 12px; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .materials a { color: #b8860b; text-decoration: none; font-weight: bold; }
+        
+        /* Стили для встроенной формы */
+        .form-container {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            margin: 20px 0;
+        }
+        .form-container h3 {
+            margin-top: 0;
+            color: #b8860b;
+        }
+        iframe {
+            width: 100%;
+            height: 500px; /* Оптимальная высота для формы с двумя полями */
+            border: none;
+            border-radius: 8px;
+        }
+
+        .materials { 
+            text-align: left; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 12px; 
+            margin: 20px 0; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+        }
+        .materials a { 
+            color: #b8860b; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        .btn { 
+            display: block; 
+            background: linear-gradient(135deg, #d4af37, #f3e5ab); 
+            color: #222; 
+            padding: 18px; 
+            text-align: center; 
+            text-decoration: none; 
+            border-radius: 12px; 
+            margin: 15px 0; 
+            font-weight: bold; 
+            font-size: 18px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+        }
     </style>
 </head>
 <body>
 
     <h1>💎 Ювелирный Ломбард</h1>
-    <p><b>Вебинар для товароведов</b><br>Оценка, подделки и стандарты 2026</p>
+    <p><b>Вебинар для товароведов</b><br>Оценка, стандарты и практика</p>
 
-    <!-- СЮДА ВСТАВЛЯЕТЕ ССЫЛКУ НА РЕГИСТРАЦИЮ -->
-    <a href="ССЫЛКА_НА_ЯНДЕКС_ФОРМЫ" class="btn">1. Регистрация на вебинар</a>
+    <!-- БЛОК С ФОРМОЙ РЕГИСТРАЦИИ -->
+    <div class="form-container">
+        <h3>📝 Регистрация на вебинар</h3>
+        <p style="font-size: 14px; color: #666;">Пожалуйста, укажите ФИО и адрес ломбарда:</p>
+        
+        <!-- Ваша Яндекс.Форма -->
+        <iframe src="https://forms.yandex.ru/u/6ae49435852af30bb00a225d/" frameborder="0" name="ya-form-6ae49435852af30bb00a225d" width="100%" height="500" style="border-radius: 8px;"></iframe>
+        
+    </div>
 
     <div class="materials">
         <h3>📂 Материалы вебинара:</h3>
         <ul>
-            <!-- СЮДА ВСТАВЛЯЕТЕ ССЫЛКИ НА ФАЙЛЫ С GITHUB -->
-            <li><a href="ССЫЛКА_НА_ФАЙЛ_PDF">Памятка товароведа (PDF)</a></li>
-            <li><a href="ССЫЛКА_НА_ФАЙЛ_PPT">Презентация спикера</a></li>
+            <li><a href="#">Памятка товароведа (скоро будет доступна)</a></li>
         </ul>
     </div>
 
-    <!-- СЮДА ВСТАВЛЯЕТЕ ССЫЛКУ НА ТЕСТ -->
-    <a href="ССЫЛКА_НА_ТЕСТ" class="btn">📝 Пройти итоговый тест</a>
+    <a href="#" class="btn">📝 Пройти итоговый тест (скоро)</a>
 
     <p style="font-size: 12px; color: #777; margin-top: 30px;">С уважением, Ваш бизнес-тренер</p>
 
